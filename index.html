@@ -9,21 +9,29 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/navstyles.css">
 <script src="js/responsive-nav.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Jomhuria&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class = "header-grid">
             <div class = "logo">
-                <img src = "imgs/mawglogo.png" alt id="Picture displaying MAWG's logo.">
+                <a href="index.html" aria-label="Go to homepage.">
+                    <img src = "imgs/mawglogo.png" alt id="Picture displaying MAWG's logo.">
+                </a>
             </div>
             <div class = "nav-bar">
                 <nav class="nav-collapse">
                     <ul>
-                        <li class="menu-item"><a href="" data-scroll>About Us</a></li>
-                        <li class="menu-item"><a href="" data-scroll>Impact</a></li>
-                        <li class="menu-item"><a href="" data-scroll>Volunteer</a></li>
-                        <li class="menu-item"><a href="" data-scroll>Locations</a></li>
+                        <li class="menu-item"><a href="aboutus.html" data-scroll>About Us</a></li>
+                        <li class="menu-item"><a href="impact.html" data-scroll>Impact</a></li>
+                        <li class="menu-item"><a href="volunteer.html" data-scroll>Volunteer</a></li>
+                        <li class="menu-item"><a href="locations.html" data-scroll>Locations</a></li>
                     </ul>
                 </nav>
                 <script src="js/fastclick.js"></script>
@@ -35,13 +43,38 @@
     <main>
         <h1>CAMPUS Y MUTUAL AID WORKING GROUP</h1>
         <h2>Chapel Hill Community Fridge</h2>
-        <img>
-        <p>Our community fridge provides free, fresh food to anyone in the community! 
-            With donations from Whole Foods in Chapel Hill, we provide an outlet for 
-            food that would otherwise be thrown in the trash and get it back out to 
-            the community.</p>
+        <div class = "maininfo">
+            <div class = "homeimg">
+                <img src = "imgs/communityfridge.jpeg" alt id="Picture of the outside of the fridge.">
+            </div>
+            <p>We're tackling the pressing issue of food justice in Orange County, where 1 in 10 residents 
+                and 1 in 5 UNC students are food insecure. Current solutions lack accessibility to fresh food. 
+                Our community fridge located in CEF will address this by operating on a "no questions asked" basis. 
+                This will help individuals who need fresh food the most to obtain it.
+                <br>
+                <br>
+                Our community fridge provides free, fresh food to anyone in the community! 
+                With donations from Whole Foods in Chapel Hill, we provide an outlet for 
+                food that would otherwise be thrown in the trash and get it back out to 
+                the community.</p>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&#169 Campus Y Student Org.</p>
+        <div class = "icons">
+            <div class = "campusyimg">
+                <a href="https://campusy.unc.edu/" aria-label="Check out the Campus Y website." target="_blank">
+                    <img src = "imgs/campusylogo.png" alt id="Icon for Campus Y.">
+                </a>
+            </div>
+            <a href="mailto:unc.mawg@gmail.com" aria-label="Contact us via email.">
+                <img src = "imgs/emailicon.png" alt id="Icon for email.">
+            </a>
+            <a href="https://www.instagram.com/chcommunityfridge/" aria-label="Follow us on Instagram" target="_blank">
+                <img src = "imgs/instagramicon.png" alt id="Icon for instagram.">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -4,36 +4,379 @@ body {
     background-color: #FDE48F;
 }
 
+h1 {
+    font-family: jomhuria;
+    font-size: 50pt;
+    letter-spacing: 3px;
+    line-height: .75;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+h2 {
+    font-family: jomhuria;
+    font-size: 35pt;
+    letter-spacing: 3px;
+    line-height: .75;
+    margin-top: .25em;
+}
+
+p {
+    font-family: itim;
+    font-size: 18pt;
+}
+
 header {
     background-color: #DB5A78;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .header-grid {
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    
+    grid-template-columns: 4fr 1fr;
 }
 
+
 main {
-    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid green;*/
+    padding: 5%;
 }
+
+.aboutmawg {
+    /*border: 2px solid green;*/
+    padding: 0;
+}
+
 
 .logo img {
     width: 25%;
     padding: 1%;
     display: grid;
     padding-top: 3%;
+    /*border: 2px solid yellow;*/
 }
 
-.logo {
-    border: 2px solid yellow;
+.logo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.logo a {
+    display: inline-block;
 }
 
 .nav-bar {
     display: grid;
     justify-content: end;
     align-content: center;
+    font-family: itim;
+    font-size: 18;
     /*border: 2px solid yellow;*/
+}
+
+.homeimg {
+    display: flex;
+    justify-content: center;
+}
+
+.homeimg {
+    transition: transform 1s;
+}
+
+.homeimg:hover {
+    transform: rotate(360deg);
+}
+
+.homeimg img {
+    width: 75%;
+}
+
+.mawggroup{
+    display: flex;
+    justify-content: center;
+}
+
+.mawggroup img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.mawggroup img{
+    width: 75%;
+}
+
+.fullfridge{
+    display: flex;
+    justify-content: center;
+}
+.fullfridge img{
+    width: 75%;
+}
+
+.fullfridge img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.bottom-locations-button{
+    background-color: #DB5A78;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    /*border: 2px solid green;*/
+    margin: 0 auto;
+    margin-top: 4%;
+    height: auto; 
+    border-radius: 10%;
+}
+
+.locations-button {
+    background-color: #DB5A78;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15%;
+    font-family: itim;
+    font-size: 18pt;
+    border-radius: 10%;
+}
+
+.locations-button:hover, .locations-button:focus {
+    background-color: #8ACFF1;
+    font-style: italic;
+}
+
+.cefimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cefimg p {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.cefimg img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.cefimg img{
+    width: 75%;
+}
+
+.churchimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.churchimage p {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.churchimage img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.churchimage img{
+    width: 75%;
+}
+
+footer {
+    background-color: #DB5A78;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.campusyimg img {
+    width: 30px;
+}
+
+.campusyimg img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.icons {
+    width: 95%;
+    /*border: 2px solid red;*/
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-around;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.impactimgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease;
+    /*border: 2px solid red;*/
+}
+
+.impactimgs img:hover {
+    transform: scale(0.8);
+}
+
+.impactimgs img{
+    width: 75%;
+    padding: 4%;
+}
+
+.low-volunteer-button {
+    display: flex;
+    justify-content: center;
+}
+
+.volunteer-button {
+    display: flex;
+    border: none;
+    justify-content: center;
+    padding: 5%;
+    width: 40%;
+    font-family: itim;
+    font-size: 18pt;
+    border-radius: 10%;
+    background-color: #DB5A78;
+}
+
+.volunteer-button:hover, .volunteer-button:focus {
+    background-color: #8ACFF1;
+    font-style: italic;
+}
+
+.volunteer-form {
+    background-color: #DB5A78;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    padding: 5%;
+    margin: 0 auto;
+    border: none;
+    font-family: itim;
+}
+
+.username-form input:hover,
+.email-form input:hover {
+    border: 2px solid black;
+}
+
+.username-form input:focus,
+.email-form input:focus {
+    border: 2px solid black;
+}
+
+.username-form input {
+    width: 100%;
+    background-color: #FDE48F;
+}
+
+.email-form input {
+    width: 100%;
+    background-color: #FDE48F;
+}
+
+.submit-button button:hover {
+    background-color: #8ACFF1;
+}
+
+.submit-button button:focus {
+    background-color: #8ACFF1;
+}
+
+.submit-button button {
+    width: 40%;  
+    padding: 2%;
+    background-color: #FDE48F;
+}
+
+@media screen and (min-width: 700px) {
+
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .nav-bar {
+        display: flex;
+    }
+
+    .maininfo {
+        display: flex;
+        
+    }
+
+    .homeimg img {
+        width: 50%;
+    }
+
+    .ourteam {
+        display: flex;
+    }
+
+    .themodel {
+        display: flex;
+    }
+
+    .mawggroup img {
+        width: 65%;
+    }
+
+    .fullfridge img {
+        width: 65%;
+    }
+
+    .cef {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .church {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .cefimg img {
+        width: 100%;
+    }
+
+    .churchimage img {
+        width: 100%;
+    }
+
+    .impactimgs {
+        flex-direction: row;
+
+    }
+
+    .impactimgs img{
+        width: 45%;
+        padding: none;
+    }
+
+    .volunteer-form {
+        padding: none;
+        width: 60%;
+    }
+    
+    .volunteer-button {
+        padding: none;
+    }
+
+    .volunteer-stuff {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
